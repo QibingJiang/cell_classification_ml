@@ -1,0 +1,18 @@
+# Mode 0 is to detect by 2 contours automatically. No thresholds need to be set manually.
+# Mode 1 is to detect by white core automatically. One parameter can be set manually.
+# Mode 2 is to detect by 2 contours manually. The following thresholds need to be set.
+# Mode 3 is to detect by white core manually. The following thresholds need to be set.
+Mode = 0
+
+# parameters for Mode 1(detect by white core automatically)
+cell_max_1 = 200 # The brightest pixel in a cell bigger than this would be considered as cells.
+
+# parameters for Mode 2(detect by 2 contours manually):
+black_edge_2 = 95 # pixels smaller than this are black edge of the cell(membrane).
+white_core_2 = 120 # bigger than this are white core pixels of a cell.
+cell_core_radius_range_2 = (1,8) # Objects beyond this open interval are noise or stroma.
+
+# parameters for Mode 3(detect by white core manually):
+white_core_3 = 120 # bigger than this are white core pixels.
+cell_core_radius_range_3 = (1,8) # Objects beyond this open interval are noise or stroma.
+cell_max_3 = 200 # The brightest pixel in a cell bigger than this would be considered as cells.
