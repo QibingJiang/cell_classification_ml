@@ -1,0 +1,18 @@
+First, download the python codes:
+https://github.com/QibingJiang/cell_classification_ml.git
+
+Second, run the following command,
+cd cell_classification_ml
+
+First, there are some package need to be installed:
+pip install opencv_python
+pip install scipy
+pip install astropy
+pip install shutil
+pip install tensorflow
+
+Now, you can run the python codes:
+python3 cell_process.py /home/qibing/Pt935_MACROPHAGE_plate1_08102022/RawData/Beacon-80/ /home/qibing/output/
+
+The first paramenter is input ,and the second parameter is output.
+
